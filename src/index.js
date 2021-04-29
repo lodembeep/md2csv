@@ -70,7 +70,7 @@ function toCSV(text) {
     if (!text) throw new Error(`empty table`);
     if (Buffer.isBuffer(text)) text = text.toString();
     const rows = textParser(text);
-    if (!isValidTable(rows)) throw new Error(`invalid table`);
+    //if (!isValidTable(rows)) throw new Error(`invalid table`);
     // splice the dividing line
     rows.splice(1, 1);
     return rows;
